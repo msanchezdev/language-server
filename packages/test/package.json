@@ -1,0 +1,32 @@
+{
+  "name": "@language-server/test",
+  "description": "Tool to test language servers",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/cli/index.tsx",
+    "dev": "bun run --watch src/cli/index.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.18",
+    "vscode-languageserver-protocol": "^3.17.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@language-server/client": "link:@language-server/client",
+    "bun": "^1.2.3",
+    "chalk": "^5.4.1",
+    "cli-spinners": "^3.2.0",
+    "commander": "^13.1.0",
+    "immer": "^10.1.1",
+    "ink": "^5.1.0",
+    "ink-task-list": "^2.0.0",
+    "mocha": "^11.1.0",
+    "react": "^18.3.1",
+    "zustand": "^5.0.3"
+  }
+}
